@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<title>Pizza</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="font/beyond_the_mountains-webfont.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<link href="style/bootstrap.min.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a class="logo" href="#"><img src="image/logo-white.png" alt="Logo"></a>
+			<ul class="main-menu font-mountainsre" id="main-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about_us.html">О нас</a></li>
+				<li><a href="constructor.html">Конструктор</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</header>
+	<section class="header small">
+		<div class="triangle-up"></div>
+		<div class="container h-100">
+			<div class="tb">
+				<div class="cell">
+					<h5><b>BEST IN TOWN</b></h5>
+					<h1>Pizza &amp; Pasta</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="area">
+		<div class="container">
+			<div class="heading">
+				<img src="image/tomato.png" alt="">
+				<h2>Our Story</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pizza-view">
+						<img src="image/pizza_construct.jpg">
+					</div>
+				</div>
+				<div class="col-md-6 pizza-config">
+					<div class="row" id="dough">
+						<div class="col-md-4">
+							<h6 style="font-size: 1.3em;">Тесто</h6>
+							<h5 style="font-size: 1.6em;">Американо</h5>
+						</div>
+						<div class="col-md-8 variants">
+							<div id="americano" data-dough="Американо" class="cheked"></div>
+							<div id="italano" data-dough="Итальяно"></div>
+							<div id="hotdog" data-dough="Кусочек"></div>	
+						</div>
+					</div>
+					<div class="row" id="size">
+						<div class="col-md-4">
+							<h6 style="font-size: 1.3em;">Размер</h6>
+							<h5 style="font-size: 1.6em;">30 см</h5>
+						</div>
+						<div class="col-md-8 variants">
+							<div id="pizza-size-large" data-size="50" data-price="60" data-weight="630"></div>
+							<div id="pizza-size-mid" data-size="30" data-price="50" data-weight="470" class="cheked"></div>
+							<div id="pizza-size-small" data-size="20" data-price="40" data-weight="340"></div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="border-top: 1px solid #dedede;padding-top: 15px;padding-bottom: 15px;">
+				<div class="col-md-6" style="border-right: 1px solid #dedede;">
+					<h5>Ваша пицца состоит из:</h5>
+					<div id="ingredientsSelect">
+
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h5>Дополнительные начинки:</h5>
+					<div id="ingredientsType">
+						<div id="seaIngredients" class="active"></div>
+						<div id="meatIngredients"></div>
+						<div id="vegIngredients"></div>
+						<div id="cheeseIngredients"></div>
+						<div id="refuelIngredients"></div>
+					</div>
+					<div id="ingredientsView">
+						<div id="seaIngredientsAll" class=""></div>
+						<div id="meatIngredientsAll" class="disabledType"></div>
+						<div id="vegIngredientsAll" class="disabledType"></div>
+						<div id="cheeseIngredientsAll" class="disabledType"></div>
+						<div id="refuelIngredientsAll" class="disabledType"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="allAmounts">		
+				<div id="reset" class="col-md-5">
+					<p>Сбросить</p>
+				</div>	
+				<a id="addToCart" class="col-md-3">
+					<p>В корзину</p>
+				</a>
+				<div id="amounts" class="col-md-3">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+        <div class="triangle-bottom"></div>
+        <div class="container-fluid">
+                <a href="#"><img src="image/logo-white.png" alt="Logo"></a>
+
+                <div style="padding-top: 30px;">
+                        <p class="underline-secondary"><b>Разработчик:</b></p>
+                        <p>Вершинина Елена Евгеньевна </p>
+                </div>
+
+                <p style="margin-top: 50px !important;color: #cccccc;font-size: .9em;">Copyright ©2020</p>
+        </div>
+	</footer>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/bootstrap.min.js"></script>
+	<script src="script/db.js"></script>
+	<script src="script/main.js"></script>
+</body>
+
+</html>
