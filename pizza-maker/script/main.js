@@ -144,7 +144,7 @@
 
 		$('.ingridient').each(function () {
 			$(this).children('.weight-ingridient').children('p').text($(this).attr('data-weight-' + dataSize) + ' гр');
-			$(this).children('.price-ingridient').children('p').text($(this).attr('data-price-' + dataSize) + ' грн');
+			$(this).children('.price-ingridient').children('p').text($(this).attr('data-price-' + dataSize) + ' руб');
 		});
 	}
 
