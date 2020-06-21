@@ -721,3 +721,54 @@ section {
 .ingridient.left {
     width: 98px;
 }
+
+#allAmounts{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #dedede;
+    height: 60px;
+}
+
+#allAmounts #reset {
+    float: left;
+    margin: 20px 25px 5px 12px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+}
+
+#allAmounts #addToCart {
+    float: right;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #EF0031;
+    border-radius: 2px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    margin: 5px 25px 5px 12px;
+    font-size: 25px;
+    color: #EF0031;
+    text-align: center;
+    cursor: pointer;
+}
+
+#allAmounts #addToCart p {
+    margin: 1px 0px 0px 0px;
+    color: #EF0031;
+}
+
+#allAmounts #addToCart:hover {
+    background: #EF0031;
+    color: #FFFFFF;
+}
+
+#allAmounts #addToCart:hover p {
+    color: #FFFFFF;
+}
+
+#allAmounts #amounts {
+    margin: 8px 0 5px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}

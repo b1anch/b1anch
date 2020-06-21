@@ -259,26 +259,26 @@
 							<h6 style="font-size: 1.3em;">Тесто</h6>
 							<h5 style="font-size: 1.6em;">Американо</h5>
 						</div>
-						<div class="col-md-8">
+						<div class="col-md-8 variants">
 							<div id="americano" data-dough="Американо" class="cheked"></div>
-							<div id="italano" data-dough="Итальяно" class=""></div>
-							<div id="hotdog" data-dough="Хот-дог" class=""></div>	
+							<div id="italano" data-dough="Итальяно"></div>
+							<div id="hotdog" data-dough="Кусочек"></div>	
 						</div>
 					</div>
 					<div class="row" id="size">
 						<div class="col-md-4">
 							<h6 style="font-size: 1.3em;">Размер</h6>
-							<h5 style="font-size: 1.6em;">50 см</h5>
+							<h5 style="font-size: 1.6em;">30 см</h5>
 						</div>
-						<div class="col-md-8">
-							<div id="pizza-size-large" class="cheked"></div>
-							<div id="pizza-size-mid"></div>
-							<div id="pizza-size-small"></div>		
+						<div class="col-md-8 variants">
+							<div id="pizza-size-large" data-size="50" data-price="60" data-weight="630"></div>
+							<div id="pizza-size-mid" data-size="30" data-price="50" data-weight="470" class="cheked"></div>
+							<div id="pizza-size-small" data-size="20" data-price="40" data-weight="340"></div>		
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row" style="border-top: 1px solid #dedede;padding-top: 15px;">
+			<div class="row" style="border-top: 1px solid #dedede;padding-top: 15px;padding-bottom: 15px;">
 				<div class="col-md-6" style="border-right: 1px solid #dedede;">
 					<h5>Ваша пицца состоит из:</h5>
 					<div id="ingredientsSelect">
@@ -295,21 +295,30 @@
 						<div id="refuelIngredients"></div>
 					</div>
 					<div id="ingredientsView">
-						<div id="wraperIngridients"></div>
-							<div id="seaIngredientsAll" class=""></div>
-							<div id="meatIngredientsAll" class="disabledType"></div>
-							<div id="vegIngredientsAll" class="disabledType"></div>
-							<div id="cheeseIngredientsAll" class="disabledType"></div>
-							<div id="refuelIngredientsAll" class="disabledType"></div>
-						</div>
+						<div id="seaIngredientsAll" class=""></div>
+						<div id="meatIngredientsAll" class="disabledType"></div>
+						<div id="vegIngredientsAll" class="disabledType"></div>
+						<div id="cheeseIngredientsAll" class="disabledType"></div>
+						<div id="refuelIngredientsAll" class="disabledType"></div>
 					</div>
-					
+				</div>
+			</div>
+			<div class="row" id="allAmounts">		
+				<div id="reset" class="col-md-5">
+					<p>Сбросить</p>
+				</div>	
+				<a id="addToCart" class="col-md-3">
+					<p>В корзину</p>
+				</a>
+				<div id="amounts" class="col-md-3">
+					<p>50 грн / 470 гр</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<script src="script/jquery.min.js"></script>
 	<script src="script/bootstrap.min.js"></script>
+	<script src="script/db.js"></script>
 	<script src="script/main.js"></script>
 </body>
 
