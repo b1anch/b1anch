@@ -467,7 +467,7 @@ section {
 }
 
 .pizza-view{
-    height: 480px;
+    height: 440px;
 }
 
 .pizza-view img {
@@ -476,7 +476,202 @@ section {
     margin: 0px 0 0 0px;
 }
 
-.pizza-view img.ingridient {
+.pizza-view img.pizza-ingridient {
     width: 330px;
     margin: 42px 0 0 42px;
+}
+
+#americano {
+    float: left;
+    width: 80px;
+    height: 52px;
+    opacity: 0.4;
+    background-image: url(../image/constructor/item-americano.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    margin: 5px 0 0 10px;
+}
+
+
+#italano {
+    float: left;
+    width: 80px;
+    height: 52px;
+    opacity: 0.4;
+    background-image: url(../image/constructor/item-italano.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    margin: 5px 0 0 10px;
+}
+
+#hotdog {
+    float: left;
+    width: 80px;
+    height: 52px;
+    opacity: 0.4;
+    background-image: url(../image/constructor/hotdog.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    margin: 5px 0 0 10px;
+}
+
+#americano.cheked, #italano.cheked, #hotdog.cheked {
+    opacity: 1;
+}
+
+#americano:hover, #italano:hover, #hotdog:hover {
+    cursor: pointer;
+}
+
+.pizza-config{
+    margin-top: 90px;
+}
+
+.pizza-config .row{
+    margin-bottom: 30px;
+}
+
+#pizza-size-large {
+    float: left;
+    width: 80px;
+    height: 65px;
+    background-image: url(../image/constructor/pizza-size-large.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+
+#pizza-size-large.cheked {
+    background-position: 50% -65px;
+}
+
+#pizza-size-mid {
+    float: left;
+    width: 80px;
+    height: 56px;
+    background-image: url(../image/constructor/pizza-size-mid.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    margin: 5px 0 0 10px;
+}
+
+#pizza-size-mid.cheked {
+    background-position: 50% -56px;
+}
+
+#pizza-size-small {
+    float: left;
+    width: 80px;
+    height: 47px;
+    background-image: url(../image/constructor/pizza-size-small.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    margin: 10px 0 0 0px;
+}
+
+#pizza-size-small.cheked {
+    background-position: 50% -47px;
+}
+
+#pizza-size-small:hover, #pizza-size-mid:hover, #pizza-size-large:hover, 
+#seaIngredients:hover, #meatIngredients:hover, #vegIngredients:hover, 
+#cheeseIngredients:hover, #refuelIngredients:hover {
+    cursor: pointer;
+}
+
+#ingredientsType {
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+}
+
+#seaIngredients {
+    background-position: -99px 0px;
+}
+
+.active#seaIngredients {
+    background-position: -99px -41px;
+}
+
+#meatIngredients {
+    background-position: -49px 0px;
+}
+
+.active#meatIngredients {
+    background-position: -49px -41px;
+}
+
+.active#vegIngredients {
+    background-position: -247px -41px;
+}
+
+#vegIngredients {
+    background-position: -247px 0px;
+}
+
+.active#cheeseIngredients {
+    background-position: -196px -41px;
+}
+#cheeseIngredients {
+    background-position: -196px 0px;
+}
+
+#refuelIngredients {
+    background-position: -344px 0px;
+}
+
+.active#refuelIngredients {
+    background-position: -344px -41px;
+}
+
+#seaIngredients, #meatIngredients, #vegIngredients, #cheeseIngredients, #refuelIngredients {
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/constructor/types.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin: 5px 25px 5px 12px;
+}
+
+.disabledType {
+    display: none;
+}
+
+.ingridient {
+    float: left;
+    position: relative;
+    width: 87px;
+    height: 100px;
+    margin: 5px 0px 5px 10px;
+    cursor: pointer;
+}
+
+.img-ingridient{
+    height: 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+
+.ingridient p {
+    font-family: Arial;
+    font-size: 11px;
+    text-align: center;
+}
+
+.weight-ingridient {
+    float: left;
+    width: 50%;
+}
+
+.weight-ingridient p{
+    color: #939393;
+}
+
+.price-ingridient {
+    float: left;
+    width: 50%;
+}
+
+.price-ingridient p{
+    color: #f10129;
 }
