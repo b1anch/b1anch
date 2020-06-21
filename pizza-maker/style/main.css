@@ -675,3 +675,49 @@ section {
 .price-ingridient p{
     color: #f10129;
 }
+
+.minusQuantity {
+    width: 14px;
+    height: 14px;
+    border: 1px solid red;
+    border-radius: 7px;
+    position: absolute;
+    top: 48px;
+    left: 79px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.minusQuantity div {
+    width: 4px;
+    height: 2px;
+    background-color: red;
+    margin: 40% 36%;
+}
+
+.amountOfPortions {
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    background: linear-gradient(red, #cb0517);
+    border-radius: 14px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.amountOfPortions div {
+    font-family: Arial;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 4% auto;
+}
+
+.ingridient.left {
+    width: 98px;
+}

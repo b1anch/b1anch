@@ -251,7 +251,6 @@
 				<div class="col-md-6">
 					<div class="pizza-view">
 						<img src="image/pizza_construct.jpg">
-						<img src="image/ingridients/1.png" class="pizza-ingridient">
 					</div>
 				</div>
 				<div class="col-md-6 pizza-config">
@@ -282,6 +281,9 @@
 			<div class="row" style="border-top: 1px solid #dedede;padding-top: 15px;">
 				<div class="col-md-6" style="border-right: 1px solid #dedede;">
 					<h5>Ваша пицца состоит из:</h5>
+					<div id="ingredientsSelect">
+
+					</div>
 				</div>
 				<div class="col-md-6">
 					<h5>Дополнительные начинки:</h5>
@@ -293,17 +295,12 @@
 						<div id="refuelIngredients"></div>
 					</div>
 					<div id="ingredientsView">
-						<div id="seaIngredientsAll" class="">
-							<div class="ingridient">
-								<div class="img-ingridient" style="background-image: url(image/ingridients/54c7abb4dd2df47f816b36f40985e9e0.jpg);"></div>
-								<p>Креветка</p>
-								<div class="weight-ingridient">
-									<p>70 гр</p>
-								</div>
-								<div class="price-ingridient">
-									<p>10 грн</p>
-								</div>
-							</div>
+						<div id="wraperIngridients"></div>
+							<div id="seaIngredientsAll" class=""></div>
+							<div id="meatIngredientsAll" class="disabledType"></div>
+							<div id="vegIngredientsAll" class="disabledType"></div>
+							<div id="cheeseIngredientsAll" class="disabledType"></div>
+							<div id="refuelIngredientsAll" class="disabledType"></div>
 						</div>
 					</div>
 					
